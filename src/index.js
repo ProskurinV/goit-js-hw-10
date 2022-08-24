@@ -23,7 +23,7 @@ function onInputSearch(event) {
       countryInfo.innerHTML = '';
       if (country.length === 1) {
         renderCountryInfo(country);
-      } else if (country.length <= 2 && country.length <= 10) {
+      } else if (country.length >= 2 && country.length <= 10) {
         renderCountryList(country);
       } else if (country.length > 10) {
         tooManyMathes();
